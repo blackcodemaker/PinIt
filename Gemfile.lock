@@ -26,7 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    autoprefixer-rails (5.1.8)
+    autoprefixer-rails (5.1.11)
       execjs
       json
     bcrypt (3.1.10)
@@ -44,14 +44,18 @@ GEM
       timers (~> 4.0.0)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.7)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-script (2.3.0)
+    coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -61,7 +65,7 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
-    execjs (2.4.0)
+    execjs (2.5.2)
     ffi (1.9.8)
     formatador (0.2.5)
     guard (2.12.5)
@@ -109,6 +113,11 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
+    paperclip (4.2.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.15.1)
     polyglot (0.3.5)
     pry (0.10.1)
@@ -200,7 +209,7 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (1.1.1)
       coffee-rails
-    tzinfo (0.3.43)
+    tzinfo (0.3.44)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -223,6 +232,7 @@ DEPENDENCIES
   guard-spork (= 1.5.0)
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  paperclip
   pg (= 0.15.1)
   rails (= 4.0.5)
   rails_12factor (= 0.0.2)
